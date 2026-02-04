@@ -1,5 +1,4 @@
-# Case Study
-
+#### Case Study :
 A recent 10-year study conducted by a research team at the Great Falls Medical School was conducted to assess how age, systolic blood pressure, and smoking relate to the risk of emphysema. Assume that the data in the file emphysema are from a portion of this study.
 Risk is interpreted as the probability (times 100) that the patient will develop emphysema over the next 10-year period. 
 
