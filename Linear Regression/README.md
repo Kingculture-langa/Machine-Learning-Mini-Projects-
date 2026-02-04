@@ -11,17 +11,17 @@ Risk is defined as the probability in percentagethat an individual will develop 
 A multiple linear regression model is developed to estimate emphysema risk and is then used to predict the risk for a specific individual.
 ________________________________________
 # Tools & Methods
-Tools
-	Libraries, Python: pandas, numpy, scikit-learn, statsmodels
-	Version Control: Git and GitHub
-##Methods
-	# Data inspection, Preparation and Visualization
-	Imported and inspected the emphysema dataset for completeness and consistency
-	Encoded smoking status as a dummy variable (1 = smoker, 0 = nonsmoker)
-	Visualized relationship between all variables
-	# Modeling Approach:
-	Applied multiple linear regression to model 10-year emphysema risk as a function of age, systolic blood pressure, and smoking status
-	Estimated regression coefficients using the least squares method
+## Tools
+- Libraries, Python: pandas, numpy, scikit-learn, Matplotlib
+- Version Control: GitHub
+## Methods
+# Data inspection, Preparation and Visualization
+mported and inspected the emphysema dataset for completeness and consistency
+Encoded smoking status as a dummy variable (1 = smoker, 0 = nonsmoker)
+Visualized relationship between all variables
+# Modeling Approach:
+Applied multiple linear regression to model 10-year emphysema risk as a function of age, systolic blood pressure, and smoking status
+Estimated regression coefficients using the least squares method
   # Prediction:
 Used the estimated regression equation to predict emphysema risk for a specific individual (Art Speen)
 Interpreted results within the context of model accuracy and uncertainty
@@ -30,11 +30,11 @@ Assessed model fit using R-squared and Adjusted R-squared
 Evaluated predictive accuracy using Mean Absolute Error (MAE) and Root Mean Squared Error (RMSE)
 # Data Description
 The dataset (emphysema) represents a subset of patients from the study and includes the following variables:
-Variable	Description
-Risk	Probability in percengateof developing emphysema over 10 years
-Age	Age of the patient (years)
-Blood pressure 	 blood pressure
-Smoker	Smoking status (1 = smoker, 0 = nonsmoker)
+## Variable	Description
+- Risk:	Probability in percengate of developing emphysema over 10 years
+- Age:	Age of the patient (years)
+- Blood pressure : blood pressure
+- Smoker: Smoking status (1 = smoker, 0 = nonsmoker)
 ________________________________________
 # Model Specification
 A multiple linear regression model is used:
@@ -73,6 +73,7 @@ The regression model allows individualized risk prediction over a
 
 # Interpretation of Model Evaluation Metrics
 The multiple linear regression model demonstrates strong explanatory power and reasonable predictive accuracy, as indicated by the evaluation metrics.
+
 The R-squared value of 0.8035 indicates that approximately 80.35% of the variability in the 10-year emphysema risk is explained by the predictors included in the model: age, systolic blood pressure, and smoking status. This suggests that the model fits the data well and that these variables are important determinants of emphysema risk.
 The Adjusted R-squared value of 0.7906 is only slightly lower than the R-squared value, indicating that the model does not include unnecessary predictors. This confirms that each variable contributes meaningful explanatory power and that the model is not overfitted.
 The Mean Absolute Error (MAE) of 5.53 indicates that, on average, the model’s predicted risk differs from the actual risk by about 5.5 percentage points. This suggests that most predictions are reasonably close to the observed values and that large prediction errors are uncommon.
