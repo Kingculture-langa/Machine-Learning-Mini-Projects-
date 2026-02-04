@@ -3,8 +3,8 @@ A recent 10-year study conducted by a research team at the Great Falls Medical S
 Risk is interpreted as the probability (times 100) that the patient will develop emphysema over the next 10-year period. 
 
 
-# Emphysema Risk Prediction Using Multiple Linear Regression
-# Overview
+## Project : Emphysema Risk Prediction Using Multiple Linear Regression
+#### Overview
 This project analyzes data from a 10-year medical study conducted by Great Falls Medical School to examine how age, systolic blood pressure, and smoking status relate to the risk of developing emphysema.
 Risk is defined as the probability in percentagethat an individual will develop emphysema over the next 10 years.
 A multiple linear regression model is developed to estimate emphysema risk and is then used to predict the risk for a specific individual.
