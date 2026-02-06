@@ -14,43 +14,34 @@ A multiple linear regression model is developed to estimate emphysema risk and i
 
 Steps followed 
 1. Install and load necessary packages
-1. Load your data
-2. Explore and Understand the data
-2. Model selection 
-4. Get a model summary
-5. Make predictions
+2. Load your data
+3. Explore and Understand the data
+4. Model selection 
+5. Get a model summary
+6. Make predictions
 7. Plot and visualize your model
 8. conclusion 
 
 ________________________________________
-#  Install and load necessary packages
-## Tools
+#  1.Install and load necessary packages
 - Libraries, Python: pandas, numpy, scikit-learn, Matplotlib
 - Version Control: GitHub
-## Load Data
-# Data inspection, Preparation and Visualization
-mported and inspected the emphysema dataset for completeness and consistency
-Encoded smoking status as a dummy variable (1 = smoker, 0 = nonsmoker)
-Visualized relationship between all variables
-# Model Selection:
-Applied multiple linear regression to model 10-year emphysema risk as a function of age, systolic blood pressure, and smoking status
-Estimated regression coefficients using the least squares method
-  # Prediction:
-Used the estimated regression equation to predict emphysema risk for a specific individual (Art Speen)
-Interpreted results within the context of model accuracy and uncertainty
-Model Evaluation:
-- Assessed model fit using R-squared and Adjusted R-squared
-- Evaluated predictive accuracy using Mean Absolute Error (MAE) and Root Mean Squared Error (RMSE)
+# 2.Load Data
 
-# Data Description
+# 3. Explore and Understand the data
+
+- imported and inspected the emphysema dataset for completeness and consistency
+- Encoded smoking status as a dummy variable (1 = smoker, 0 = nonsmoker)
+- Visualized relationship between all variables
+ Data Description
 The dataset (emphysema) represents a subset of patients from the study and includes the following variables:
 Variable	Description
 - Risk:	Probability in percengate of developing emphysema over 10 years
 - Age:	Age of the patient (years)
 - Blood pressure : blood pressure
 - Smoker: Smoking status (1 = smoker, 0 = nonsmoker)
-________________________________________
-# Model Specification
+  
+# 4.Model Selection:
 Supervide machine learning algorithm: A multiple linear regression model is used:
 Risk = β_0+β_1 (Age)+β_2 (Boold presuure)+β_3 (Smoker)
 
@@ -61,27 +52,28 @@ Risk = β_0+β_1 (Age)+β_2 (Boold presuure)+β_3 (Smoker)
 	- 1 = Smoker
 	- 0 = Nonsmoker
 
-________________________________________
-# Prediction: 
+
+# 5. Model summuary 
+Model Evaluation:
+- Assessed model fit using R-squared and Adjusted R-squared
+- Evaluated predictive accuracy using Mean Absolute Error (MAE) and Root Mean Squared Error (RMSE)
+
+
+# 6.Prediction:
 Once the regression coefficients are estimated, Art Speen’s risk is calculated by substituting his values into the regression equation:
 "Predicted Risk"=β_0+β_1 (68)+β_2 (175)+β_3 (1)
 
-This result represents the predicted probability in percentage that Art Speen will develop emphysema within the next 10 years is 53.81%
-________________________________________
-# Files in This Repository
-- LinearRegressionModel.ipynb -Regression analysis and prediction code
-- Risk of emphysema.csv – Dataset used for analysis
-- riskOfemphysema.Cleand.csv-  file after data cleaning 
-- README.md – Project documentation
-________________________________________
+
+
+
+# 7. Plot and visualize your model
 
 # Results
 Age, blood pressure, and smoking status are important predictors of emphysema risk.
 Smoking status is incorporated using a binary (dummy) variable.
 The regression model allows individualized risk prediction over a 
 
-
-# Interpretation of Model Evaluation Metrics
+#  Interpretation of Model Evaluation Metrics
 The multiple linear regression model demonstrates strong explanatory power and reasonable predictive accuracy, as indicated by the evaluation metrics.
 
 - The R-squared value of 0.8035 indicates that approximately 80.35% of the variability in the 10-year emphysema risk is explained by the predictors included in the model: age, blood pressure, and smoking status. This suggests that the model fits the data well and that these variables are important determinants of emphysema risk.
@@ -91,6 +83,15 @@ The multiple linear regression model demonstrates strong explanatory power and r
 - The Mean Absolute Error (MAE) of 5.53 indicates that, on average, the model’s predicted risk differs from the actual risk by about 5.5 percentage points. This suggests that most predictions are reasonably close to the observed values and that large prediction errors are uncommon.
   
 - The Root Mean Squared Error (RMSE) of 6.53 represents the typical prediction error while placing greater weight on larger errors. The fact that RMSE is moderately higher than MAE suggests the presence of some larger prediction errors, but not to an extreme degree. Overall, this level of error is acceptable for a medical risk prediction model based on a limited number of predictors.
+
+- ________________________________________
+# Files in This Repository
+- LinearRegressionModel.ipynb -Regression analysis and prediction code
+- Risk of emphysema.csv – Dataset used for analysis
+- riskOfemphysema.Cleand.csv-  file after data cleaning 
+- README.md – Project documentation
+________________________________________
+
 
 
 
