@@ -1,3 +1,5 @@
+
+## Project : Emphysema Risk Prediction Using Multiple Linear Regression
 #### Case Study :
 A recent 10-year study conducted by a research team at the Great Falls Medical School was conducted to assess how age, systolic blood pressure, and smoking relate to the risk of emphysema. Assume that the data in the file emphysema are from a portion of this study.
 Risk is interpreted as the probability (times 100) that the patient will develop emphysema over the next 10-year period. 
@@ -5,22 +7,32 @@ Research Question:
 What is the probability of developing emphysema over the next 10 years for: Art Speen, a 68-year-old smoker with a systolic blood pressure of 175 mmHg?
 
 
-## Project : Emphysema Risk Prediction Using Multiple Linear Regression
 #### Overview
 This project analyzes data from a 10-year medical study conducted by Great Falls Medical School to examine how age, systolic blood pressure, and smoking status relate to the risk of developing emphysema.
 Risk is defined as the probability in percentagethat an individual will develop emphysema over the next 10 years.
 A multiple linear regression model is developed to estimate emphysema risk and is then used to predict the risk for a specific individual.
+
+Steps followed 
+1. Install and load necessary packages
+1. Load your data
+2. Explore and Understand the data
+2. Model selection 
+4. Get a model summary
+5. Make predictions
+7. Plot and visualize your model
+8. conclusion 
+
 ________________________________________
-# Tools & Methods
+#  Install and load necessary packages
 ## Tools
 - Libraries, Python: pandas, numpy, scikit-learn, Matplotlib
 - Version Control: GitHub
-## Methods
+## Load Data
 # Data inspection, Preparation and Visualization
 mported and inspected the emphysema dataset for completeness and consistency
 Encoded smoking status as a dummy variable (1 = smoker, 0 = nonsmoker)
 Visualized relationship between all variables
-# Modeling Approach:
+# Model Selection:
 Applied multiple linear regression to model 10-year emphysema risk as a function of age, systolic blood pressure, and smoking status
 Estimated regression coefficients using the least squares method
   # Prediction:
