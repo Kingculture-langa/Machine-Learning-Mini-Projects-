@@ -54,26 +54,26 @@ Risk = β_0+β_1 (Age)+β_2 (Boold presuure)+β_3 (Smoker)
 
 
 # 5. Model summuary 
-Model Evaluation:
-- Assessed model fit using R-squared and Adjusted R-squared
-- Evaluated predictive accuracy using Mean Absolute Error (MAE) and Root Mean Squared Error (RMSE)
+coefficients:
+- B0 -77.2518 	Intercept
+- B1 1.1623 	Coeffictent for Age
+- B2 0.2546 	Coeffictent for Blood pressure
+- B3 7.4650 	Coeffictent for For smoker
 
+Model Evaluation:
+- R-squared:					 	0.8035
+- Adjusted R-squared:	 			0.7906
+- Mean Absolute Error (MAE):		5.5295
+- Root Mean Squared Error (RMSE): 6.5272
 
 # 6.Prediction:
 Once the regression coefficients are estimated, Art Speen’s risk is calculated by substituting his values into the regression equation:
 "Predicted Risk"=β_0+β_1 (68)+β_2 (175)+β_3 (1)
 
-
-
-
 # 7. Plot and visualize your model
 
-# Results
-Age, blood pressure, and smoking status are important predictors of emphysema risk.
-Smoking status is incorporated using a binary (dummy) variable.
-The regression model allows individualized risk prediction over a 
-
-#  Interpretation of Model Evaluation Metrics
+# 8 Conclution 
+Interpretation of Model Evaluation Metrics
 The multiple linear regression model demonstrates strong explanatory power and reasonable predictive accuracy, as indicated by the evaluation metrics.
 
 - The R-squared value of 0.8035 indicates that approximately 80.35% of the variability in the 10-year emphysema risk is explained by the predictors included in the model: age, blood pressure, and smoking status. This suggests that the model fits the data well and that these variables are important determinants of emphysema risk.
