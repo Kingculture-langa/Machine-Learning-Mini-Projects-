@@ -1,6 +1,8 @@
 #### Case Study :
 A recent 10-year study conducted by a research team at the Great Falls Medical School was conducted to assess how age, systolic blood pressure, and smoking relate to the risk of emphysema. Assume that the data in the file emphysema are from a portion of this study.
 Risk is interpreted as the probability (times 100) that the patient will develop emphysema over the next 10-year period. 
+Research Question:
+What is the probability of developing emphysema over the next 10 years for: Art Speen, a 68-year-old smoker with a systolic blood pressure of 175 mmHg?
 
 
 ## Project : Emphysema Risk Prediction Using Multiple Linear Regression
@@ -38,19 +40,17 @@ Variable	Description
 ________________________________________
 # Model Specification
 Supervide machine learning algorithm: A multiple linear regression model is used:
-Risk= β_0+β_1 (Age)+β_2 (Boold presuure)+β_3 (Smoker)
+Risk = β_0+β_1 (Age)+β_2 (Boold presuure)+β_3 (Smoker)
 
-Where:
+- Where:
 	- β_0is the intercept
 	- β_1,β_2,β_3are regression coefficients
-Smoking status is represented using a dummy variable, where:
+- Smoking status is represented using a dummy variable, where:
 	- 1 = Smoker
 	- 0 = Nonsmoker
+
 ________________________________________
-# Research Question
-What is the probability of developing emphysema over the next 10 years for: Art Speen, a 68-year-old smoker with a systolic blood pressure of 175 mmHg?
-________________________________________
-# Prediction Method
+# Prediction: 
 Once the regression coefficients are estimated, Art Speen’s risk is calculated by substituting his values into the regression equation:
 "Predicted Risk"=β_0+β_1 (68)+β_2 (175)+β_3 (1)
 
