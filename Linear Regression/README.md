@@ -72,6 +72,9 @@ Once the regression coefficients are estimated, Art Speen’s risk is calculated
 
 # 7. Plot and visualize your model
 
+<img width="944" height="966" alt="image" src="https://github.com/user-attachments/assets/759abf6f-d4a9-4731-90ec-fe82ad725bef" />
+
+
 # 8 Conclution 
 Interpretation of Model Evaluation Metrics
 The multiple linear regression model demonstrates strong explanatory power and reasonable predictive accuracy, as indicated by the evaluation metrics.
